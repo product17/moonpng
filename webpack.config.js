@@ -1,9 +1,11 @@
 'use strict';
 
+const path = require('path');
+
 module.exports = {
-  entry: '_/admin/',
+  entry: './lib/components/routers/admin.jsx',
   output: {
-    path: __dirname,
+    path: path.resolve(__dirname, 'public/scripts'),
     filename: 'admin.js',
   },
   module: {
