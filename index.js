@@ -14,9 +14,9 @@ const db = mongoose.connect('mongodb://localhost/task-react', (err) => {
 });
 
 // Init the express application
-const app = require('_/configs/express-config')(db);
+const app = require('./lib/configs/express-config')(db);
 
 // Run the passport configs
-require('_/configs/passport-config')();
+require('./lib/configs/passport-config')();
 
 module.exports = app;
